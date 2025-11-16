@@ -8,7 +8,7 @@
 - 클라이언트 : 로그인이 이루어지는 환경 (앱, 웹, 서버등)
 - Resource Owner : 사용자
 - Authorization Server : Google, Apple과 같은 인증 서버
-- Redirect URI^[[[URL과 URI]]]  : 인증 후 코드를 돌려주는 URL
+- Redirect URI^[[[URL, URI, URN]]]  : 인증 후 코드를 돌려주는 URL
 - Authorization Code : Access Token을 받을 때 사용하는 “일회용 코드”
 - Access Token : API 접근에 쓰이는 실제 권한 토큰
 - Refresh Token : Access Token이 만료되면 새로 발급받는 토큰
