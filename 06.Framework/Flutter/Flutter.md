@@ -2,6 +2,7 @@
 - [[async-await]]
 - [[Deep Link]]
 - [[Inherited Widget]]
-- [[stream]]
+- **RiverPod**
+	- [[stream]]
 
 %% End Waypoint %%

@@ -1,32 +1,4 @@
-### **InheritedWidget**
-
-- 위젯 트리에서 **하위 위젯들에게 데이터를 효율적으로 전달**하기 위한 위젯
-- 트리 위쪽에서 데이터를 제공하고, 하위 위젯들이 BuildContext를 통해 쉽게 접근할 수 있게 해줍니다.
-- 대표적인 예시가 **Theme.of(context)** 나 **MediaQuery.of(context)**에요.
-
-  
-
-1. inheritedWidget 상속
-
-  
-
-
-
-# buildContext
-
-- BuildContext : 위젯트리상의 위젯의 위치에 관한 정보를 담고있는 참조 객체
-- context : buildContext 타입의 인스턴스
-
-  
-
-# of 함수
-
-- 현재 위젯의 위쪽 방향으로 가장 가까운 위젯을 찾는 함수
-- Scaffold.of(context) 현재 context기준에서 위쪽방향으로 가장 가까운 Scaffold 찾기
-- cost가 많이 드는 함수 → 대신 global key 이용하는 편
-
-
-## **개요**
+# **개요**
 
 위젯트리 최상단 위젯의 어떤 데이터를 하위 위젯에서 사용하고 싶을 때 가장 기본적인 방법은  
 생성자에 파라미터로 받을 수 있도록 뚫어주는 방법이 있지만... 귀찮다! 유지보수도 힘들고 중간과정의 위젯도 모두 뚫어줘야하는 문제가 있다!  
@@ -34,14 +6,14 @@
 
 **위젯트리 최상단을 InheritedWidget으로 시작하여 언제든지 하위위젯에서 접근가능하도록 할 수 있다!!**
 
-## **사용법**
+# **사용법**
 
 InheritedWidget을 상속받는 Class를 위젯트리 최상단이 되도록 구현하고  
 하위 위젯에서 of 메서드를 활용해서 접근할 수 있다.
 
-### InheritedWidget 구현
+## InheritedWidget 구현
 
-```
+``` dart
 class MyInheritedWidget extends InheritedWidget {
   final int counter;
 
@@ -68,7 +40,14 @@ class MyInheritedWidget extends InheritedWidget {
 }
 ```
 
-### 하위 위젯에서 접근하기
+> [!note] of 함수
+> - 현재 위젯의 위쪽 방향으로 가장 가까운 위젯을 찾는 함수
+> - Scaffold.of(context) 현재 context기준에서 위쪽방향으로 가장 가까운 Scaffold 찾기
+> - cost가 많이 드는 함수 → 대신 global key 이용하는 편
+> 
+
+
+## 하위 위젯에서 접근하기
 
 ```
 void main() {
@@ -98,7 +77,7 @@ class MyApp extends StatelessWidget {
 }
 ```
 
-## **사실 이미 쓰고 있었던 inherited Widget**
+# **사실 이미 쓰고 있었던 inherited Widget**
 
 나도 모르게 사용하고 있던 경우가 있는데 바로 다음과 같은 경우이다.
 
@@ -106,7 +85,7 @@ class MyApp extends StatelessWidget {
 -   MediaQuery.of(context) → 화면 크기 정보를 제공하는 InheritedWidget
 -   Localizations.of(context) → InheritedWidget을 활용하여 현재 앱의 언어 설정 데이터를 제공
 
-## **Provider도 inherited Widget?**
+# **Provider도 inherited Widget?**
 
 상태(state)를 관리하고 트리 내 여러 위젯이 동일한 데이터를 쉽게 공유할 수 있도록 해주는 라이브러리인  
 Provider는 InheritedWidget을 더 편리하게 사용하기 위해 만들어진 추상화 라이브러리입니다.  
