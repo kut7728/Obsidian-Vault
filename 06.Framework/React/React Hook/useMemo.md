@@ -1,4 +1,4 @@
-#Hook
+#hook
 
 # 개요
 - React의 **메모이제이션(memoization)** 훅이에요.

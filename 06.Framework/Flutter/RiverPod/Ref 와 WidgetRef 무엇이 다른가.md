@@ -7,6 +7,8 @@
 > Ref : Provider 내부에서 다른 provider와 소통할 때 사용
 > WidgetRef : Widget 내부에서 provider와 소통할 때 사용
 
+
+
 ## Ref
 - Provider가 생성되거나 동작할 때 전달되는 객체
 - 사용위치:

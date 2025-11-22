@@ -1,4 +1,4 @@
-#NextJS 
+#nextjs 
 # 개요
 - React에서 **params**는 Next.js App Router의 동적 라우팅에서 사용되는 URL 파라미터입니다.
 
