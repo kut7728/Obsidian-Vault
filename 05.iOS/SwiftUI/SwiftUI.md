@@ -25,7 +25,6 @@
 - [[searchable()]]
 - [[Static 과 Singleton]]
 - [[SwiftData]]
-- [[SwiftUI]]
 - [[TabBarView]]
 - [[TextFieldView]]
 - [[TextView]]

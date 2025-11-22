@@ -11,7 +11,6 @@
 - [[Class에서 타입메소드]]
 - [[NSObject와 AnyObject의 차이]]
 - [[Recursive Enumerations]]
-- [[Swift 공식문서 스터디]]
 - [[Swift 메모리 안정성]]
 - [[Swift 프로토콜]]
 - [[where 구문]]

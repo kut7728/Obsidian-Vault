@@ -1,6 +1,6 @@
 %% Begin Waypoint %%
 - [[구조체 (Struct)]]
-- [[iOS/Swift/데이터 타입]]
+- [[05.iOS/Swift/데이터 타입]]
 - [[메모리 참조 방법]]
 - [[배열, 딕셔너리 (Collection)]]
 - [[에러 핸들링]]
@@ -22,7 +22,6 @@
 - [[Some]]
 - [[String]]
 - [[Swift REST API]]
-- [[Swift]]
 - [[Swift의 시간과 날짜 표현]]
 - [[typealias]]
 
