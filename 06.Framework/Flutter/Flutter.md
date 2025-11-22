@@ -1,6 +1,6 @@
 %% Begin Waypoint %%
 - [[async-await]]
-- [[Deep Link]]
+- [[DeepLink]]
 - [[Inherited Widget]]
 - **[[RiverPod]]**
 

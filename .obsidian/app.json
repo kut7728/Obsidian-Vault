@@ -2,10 +2,11 @@
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "strictLineBreaks": false,
-  "showLineNumber": true,
+  "showLineNumber": false,
   "spellcheck": false,
   "attachmentFolderPath": "00.Attachments",
   "newFileLocation": "root",
   "foldHeading": false,
-  "foldIndent": false
+  "foldIndent": false,
+  "showIndentGuide": false
 }

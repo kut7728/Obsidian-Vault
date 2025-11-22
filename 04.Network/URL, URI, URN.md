@@ -15,6 +15,6 @@
 `scheme:[//authority]path[?query][#fragment]`
 - 스킴의 종류에 따라 다양한 역할을 수행할 수 있음
 - mailto: tel: sms: 과 같은 표준 스킴기반의 URI가 있고
-- 앱 bundleID등을 넣은 앱 딥링크^[[[Deep Link]]]도 수행할 수 있음
+- 앱 bundleID등을 넣은 앱 딥링크^[[[DeepLink]]]도 수행할 수 있음
 
 ![[Pasted image 20251116220228.png]]
